@@ -1,3 +1,5 @@
-Hello! This is my repository for projects that I either worked on for school, during my free time or for a position! 
+Hello again! This is my final project I worked on for my Python Data Structures class. 
 
-My projects can be found under branches, which was made in order to keep all my projects separated for easy viewing and downloading. 
+I had utilized a rubric that my professor had handed out. The files also came pre-written, which I had to complete the missing codes. 
+
+That's about it. Thank you for viewing!

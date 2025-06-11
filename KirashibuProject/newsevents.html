@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kirashibu News & Events</title>
+    <link rel="stylesheet" href="newsevents.css">
+	<style>
+        /* Style for the dropdown cards */
+        .dropdown-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ff4c4c; /* Optional border for cards */
+        }
+
+        /* Image fills the card while remaining centered */
+        .dropdown-card img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        /* Text styling */
+        .dropdown-card p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div id="exploreButton" class="navbar-item">Explore ▼</div>
+                <div class="navbar-search">
+                    <input type="text" class="navbar-search-input" placeholder="Search...">
+                    <button class="navbar-search-button">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="homepage.html" class="navbar-logo">KIRASHIBU</a>
+            </div>
+			<div class="navbar-left">
+				<a href="newsevents.html" id="newsEventsButton" class="navbar-item">News & Events</a>
+				<a href="careers.html" id="careersButton" class="navbar-item">Careers</a>
+			</div>
+        </div>
+        <!-- Explore Dropdown -->
+        <div id="exploreDropdown" class="dropdown-expand" style="display: none;">
+            <div class="dropdown-left">
+                <ul class="dropdown-list">
+                    <li><a href="#" data-section="home" class="dropdown-link">Home</a></li>
+                    <li><a href="#" data-section="missions" class="dropdown-link">Missions</a></li>
+                    <li><a href="#" data-section="humans-in-space" class="dropdown-link">Artificial Intelligence</a></li>
+                    <li><a href="#" data-section="earth-climate" class="dropdown-link">Earth & Climate</a></li>
+                    <li><a href="#" data-section="solar-system" class="dropdown-link">The Solar System & Beyond</a></li>
+                    <li><a href="#" data-section="universe" class="dropdown-link">The Cloud</a></li>
+                    <li><a href="#" data-section="science" class="dropdown-link">Science</a></li>
+                    <li><a href="#" data-section="aeronautics" class="dropdown-link">Aeronautics</a></li>
+                    <li><a href="#" data-section="technology" class="dropdown-link">Technology</a></li>
+                    <li><a href="#" data-section="learning-resources" class="dropdown-link">Learning Resources</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-right explore-dropdown-cards" id="dropdownContent">
+				<!-- Default Home Content -->
+				<div class="dropdown-card">
+					<a href="hoffman.html">
+						<img src="observe.jpeg" alt="Observatory">
+					</a>
+					<p>Discover Our Hoffman Observatory</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="solai.png" alt="AI">
+					</a>
+					<p>Explore How We Use AI</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="satellite.jpeg" alt="Satellite">
+					</a>
+					<p>Explore Our Radar Systems</p>
+				</div>
+			</div>
+        </div>
+    </div>
+
+
+
+    <main>
+	<section class="calendar">
+      <h2>December 2024 Calendar</h2>
+      <table class="calendar-table">
+        <thead>
+          <tr>
+            <th>Sun</th>
+            <th>Mon</th>
+            <th>Tue</th>
+            <th>Wed</th>
+            <th>Thu</th>
+            <th>Fri</th>
+            <th>Sat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="event">
+              1
+              <div class="event-details">
+                <strong>AI Innovation Summit</strong>
+                <p>San Francisco, CA</p>
+                <p>Join us for groundbreaking discussions on AI trends.</p>
+              </div>
+            </td>
+            <td>2</td>
+            <td>3</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td>9</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>11</td>
+            <td>12</td>
+            <td>13</td>
+            <td class="event">
+              14
+              <div class="event-details">
+                <strong>Hoffman Observatory Tour</strong>
+                <p>Hoffman Observatory, AK</p>
+                <p>Discover and watch our observatory in action!</p>
+              </div>
+            </td>
+            <td>15</td>
+            <td>16</td>
+            <td>17</td>
+          </tr>
+          <tr>
+            <td>18</td>
+            <td>19</td>
+            <td>20</td>
+            <td>21</td>
+            <td>22</td>
+            <td>23</td>
+            <td>24</td>
+          </tr>
+          <tr>
+            <td class="event">
+              25
+              <div class="event-details">
+                <strong>Holiday Celebration</strong>
+                <p>New York, NY</p>
+                <p>Celebrate the holidays with us in style.</p>
+              </div>
+            </td>
+            <td>26</td>
+            <td>27</td>
+            <td>28</td>
+            <td>29</td>
+            <td>30</td>
+            <td>31</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    
+	<section class="news">
+		<h2 class="Latest-news-title">Latest News</h2>
+		<div class="news-container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; max-width: 1200px; margin: 0 auto;">
+
+			<!-- Latest Featured News Card -->
+			<div class="news-card large-news" style="position: relative; border-radius: 10px; overflow: hidden; transition: transform 0.3s;">
+				<img src="launchpad.jpeg" alt="Upcoming Launches" style="width: 100%; height: 100%; object-fit: cover;">
+				<div class="news-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); padding: 20px;">
+					<p class="news-meta" style="font-size: 0.9em; color: #f0f0f0;">3 MIN READ • ARTICLE</p>
+					<h3 class="news-title" style="font-size: 1.5em; margin: 0; color: white;">
+						<a href="missions.html" style="text-decoration: none; color: white;">Learn About Our Upcoming Launches in 2025</a>
+					</h3>
+				</div>
+			</div>
+
+			<!-- Small News Cards -->
+			<div class="news-card" style="position: relative; border-radius: 10px; overflow: hidden; transition: transform 0.3s;">
+				<img src="solai.png" alt="Journey Across the Earth" style="width: 100%; height: 100%; object-fit: cover;">
+				<div class="news-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); padding: 20px;">
+					<p class="news-meta" style="font-size: 0.9em; color: #f0f0f0;">5 MIN READ • ARTICLE</p>
+					<h3 class="news-title" style="font-size: 1.3em; margin: 0; color: white;">
+						<a href="launches2025.html" style="text-decoration: none; color: white;">Learn More About our SolAI</a>
+					</h3>
+				</div>
+			</div>
+
+			<div class="news-card" style="position: relative; border-radius: 10px; overflow: hidden; transition: transform 0.3s;">
+				<img src="arctic.jpeg" alt="Server Protection" style="width: 100%; height: 100%; object-fit: cover;">
+				<div class="news-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); padding: 20px;">
+					<p class="news-meta" style="font-size: 0.9em; color: #f0f0f0;">5 MIN READ • ARTICLE</p>
+					<h3 class="news-title" style="font-size: 1.3em; margin: 0; color: white;">
+						<a href="launches2025.html" style="text-decoration: none; color: white;">Antarctica: Kirashibu Scientists Arrive at Outpost</a>
+					</h3>
+				</div>
+			</div>
+
+			<!-- Additional News Cards -->
+			<div class="news-card" style="position: relative; border-radius: 10px; overflow: hidden; transition: transform 0.3s;">
+				<img src="milkyway.jpeg" alt="Space Exploration" style="width: 100%; height: 100%; object-fit: cover;">
+				<div class="news-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); padding: 20px;">
+					<p class="news-meta" style="font-size: 0.9em; color: #f0f0f0;">4 MIN READ • ARTICLE</p>
+					<h3 class="news-title" style="font-size: 1.3em; margin: 0; color: white;">
+						<a href="#" style="text-decoration: none; color: white;">Exploring the Final Frontier: Space Updates</a>
+					</h3>
+				</div>
+			</div>
+
+			<div class="news-card" style="position: relative; border-radius: 10px; overflow: hidden; transition: transform 0.3s;">
+				<img src="robotic.jpeg" alt="Robotics Innovations" style="width: 100%; height: 100%; object-fit: cover;">
+				<div class="news-content" style="position: absolute; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.6); padding: 20px;">
+					<p class="news-meta" style="font-size: 0.9em; color: #f0f0f0;">6 MIN READ • ARTICLE</p>
+					<h3 class="news-title" style="font-size: 1.3em; margin: 0; color: white;">
+						<a href="#" style="text-decoration: none; color: white;">Advances in Robotics: What to Expect</a>
+					</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section class="image-map-section" style="margin-top: 50px; text-align: center;">
+		<h2 style="font-size: 2em; margin-bottom: 20px; color: #2b3a67;">Explore Our Event Locations</h2>
+		<img src="world.jpeg" alt="World Map" usemap="#worldmap" style="max-width: 100%; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+		
+		<map name="worldmap">
+			<!-- Alaska Pointer -->
+			<area shape="circle" coords="265,430,25" href="hoffman.html" alt="Hoffman Observatory" title="Hoffman Observatory">
+		</map>
+	</section>
+
+    </main>
+
+<!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-signup">
+            <div class="signup-header">
+                <h3>GET KIRASHIBU UPDATES IN YOUR EMAIL</h3>
+                <p>Sign up and never miss out on what we're up to.</p>
+            </div>
+            <form class="footer-form">
+                <input type="email" placeholder="EMAIL ADDRESS" required>
+                <div class="footer-name-fields">
+                    <input type="text" placeholder="FIRST NAME" required>
+                    <input type="text" placeholder="LAST NAME" required>
+                </div>
+                <button type="submit" class="footer-button">SIGN UP</button>
+            </form>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column footer-logo">
+                <img src="global.png" alt="Kirashibu Logo">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Kirashibu Centers</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">Career Finder</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAPABILITIES</h4>
+                <ul>
+                    <li><a href="#">Cybersecurity Operations</a></li>
+                    <li><a href="#">Humanitarian Operations</a></li>
+                    <li><a href="#">Facilitating Launches</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">What to Expect</a></li>
+                    <li><a href="#">For Families</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KIRASHIBU CORPORATION | PRIVACY POLICY | ACCESSIBILITY | SITEMAP | COOKIE SETTINGS</p>
+        </div>
+    </footer>
+
+   <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const exploreButton = document.getElementById('exploreButton');
+            const exploreDropdown = document.getElementById('exploreDropdown');
+
+            // Toggle the dropdown menu
+            exploreButton.addEventListener('click', function () {
+                exploreDropdown.style.display = exploreDropdown.style.display === 'none' || exploreDropdown.style.display === '' 
+                    ? 'flex' 
+                    : 'none';
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!exploreButton.contains(event.target) && !exploreDropdown.contains(event.target)) {
+                    exploreDropdown.style.display = 'none';
+                }
+            });
+
+            // Dropdown content handler (dynamic content rendering for future sections)
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
+            const dropdownContent = document.getElementById('dropdownContent');
+
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const section = e.target.dataset.section;
+
+                    dropdownContent.innerHTML = ''; // Clear previous content
+
+                    if (section === 'home') {
+                        dropdownContent.innerHTML = `
+                            <div class="dropdown-card">
+                                <a href="hoffman.html">
+                                    <img src="observe.jpeg" alt="Observatory" class="dropdown-card-img">
+                                </a>
+                                <p>Discover Our Hoffman Observatory</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="solai.png" alt="AI" class="dropdown-card-img">
+                                </a>
+                                <p>Explore How We Use AI</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="satellite.jpeg" alt="Satellite" class="dropdown-card-img">
+                                </a>
+                                <p>Explore Our Deep Space Radar Systems</p>
+                            </div>
+                        `;
+                    }
+                    // Additional conditions for other sections can be added here
+                });
+            });
+        });
+    </script>
+</body>
+</html>

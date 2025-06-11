@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="hoffman.css">
+	<style>
+        /* Style for the dropdown cards */
+        .dropdown-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ff4c4c; /* Optional border for cards */
+        }
+
+        /* Image fills the card while remaining centered */
+        .dropdown-card img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        /* Text styling */
+        .dropdown-card p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div id="exploreButton" class="navbar-item">Explore ▼</div>
+                <div class="navbar-search">
+                    <input type="text" class="navbar-search-input" placeholder="Search...">
+                    <button class="navbar-search-button">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="homepage.html" class="navbar-logo">KIRASHIBU</a>
+            </div>
+			<div class="navbar-left">
+				<a href="newsevents.html" id="newsEventsButton" class="navbar-item">News & Events</a>
+				<a href="careers.html" id="careersButton" class="navbar-item">Careers</a>
+			</div>
+        </div>
+        <!-- Explore Dropdown -->
+        <div id="exploreDropdown" class="dropdown-expand" style="display: none;">
+            <div class="dropdown-left">
+                <ul class="dropdown-list">
+                    <li><a href="#" data-section="home" class="dropdown-link">Home</a></li>
+                    <li><a href="#" data-section="missions" class="dropdown-link">Missions</a></li>
+                    <li><a href="#" data-section="humans-in-space" class="dropdown-link">Artificial Intelligence</a></li>
+                    <li><a href="#" data-section="earth-climate" class="dropdown-link">Earth & Climate</a></li>
+                    <li><a href="#" data-section="solar-system" class="dropdown-link">The Solar System</a></li>
+                    <li><a href="#" data-section="universe" class="dropdown-link">The Universe</a></li>
+                    <li><a href="#" data-section="science" class="dropdown-link">Science</a></li>
+                    <li><a href="#" data-section="aeronautics" class="dropdown-link">Aeronautics</a></li>
+                    <li><a href="#" data-section="technology" class="dropdown-link">Technology</a></li>
+                    <li><a href="#" data-section="learning-resources" class="dropdown-link">Learning Resources</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-right explore-dropdown-cards" id="dropdownContent">
+				<!-- Default Home Content -->
+				<div class="dropdown-card">
+					<a href="hoffman.html">
+						<img src="observe.jpeg" alt="Observatory">
+					</a>
+					<p>Discover Our Hoffman Observatory</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="solai.png" alt="AI">
+					</a>
+					<p>Explore How We Use AI</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="satellite.jpeg" alt="Satellite">
+					</a>
+					<p>Explore Our Radar Systems</p>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <img src="observe.jpeg" alt="telescope" class="hero-img">
+        <div class="hero-content">
+            <h1 class="hero-title">Studying Space</h1>
+            <p class="hero-subtitle">Discover how We Use the Hoffman Observatory</p>
+        </div>
+    </section>
+
+    <!-- Article Section -->
+    <main class="article-container">
+        <div class="article-main-content">
+            <header class="article-header">
+                <h1 class="article-title">Hoffman Observatory: Unraveling the Mysteries of the Cosmos</h1>
+            </header>
+            <section class="article-content">
+                <h2>Overview of the Hoffman Observatory</h2>
+                <p>The Hoffman Observatory is a next-generation space observatory, equipped with cutting-edge technology to observe the universe across a wide range of wavelengths, from visible light to infrared and X-ray. Launched in 1976, the telescope orbits far beyond Earth’s atmosphere, allowing it to capture unparalleled clarity of cosmic phenomena without the distortion caused by atmospheric interference. It's ran and maintained by the Kirashibu Deep Space Observation Laboratory, which allows the telescope be overviewed by renowned scientists.</p>
+
+                <h2>Key Objectives</h2>
+                <ul>
+                    <li>Study the formation and evolution of galaxies.</li>
+                    <li>Map dark matter and dark energy distributions in the universe.</li>
+                    <li>Detect and analyze exoplanets in habitable zones around distant stars.</li>
+                    <li>Investigate black holes, neutron stars, and other extreme cosmic phenomena.</li>
+                    <li>Search for evidence of the universe’s earliest moments.</li>
+                </ul>
+
+                <h2>Engineering Marvel: Design and Technology</h2>
+                <h3>Multi-Wavelength Imaging</h3>
+                <p>The observatory is equipped with advanced sensors and instruments that work across multiple wavelengths:</p>
+                <ul>
+                    <li><strong>Infrared Sensors:</strong> Peering through cosmic dust to reveal the hidden structure of galaxies.</li>
+                    <li><strong>X-ray Detectors:</strong> Observing high-energy phenomena such as black hole accretion disks and supernovae.</li>
+                    <li><strong>Optical Cameras:</strong> Providing detailed images of celestial objects with remarkable resolution.</li>
+                </ul>
+
+                <h3>Precision Optics</h3>
+                <p>The heart of the telescope is its ultra-lightweight, segmented mirror system, capable of unfolding in space to create a massive reflective surface. This allows the Hoffman Observatory to capture faint light from the edges of the known universe.</p>
+
+                <h3>Autonomous AI Systems</h3>
+                <p>Equipped with onboard artificial intelligence, the Hoffman Observatory autonomously identifies points of interest, optimizes observation schedules, and adjusts instrumentation in real time for maximum efficiency.</p>
+
+                <h3>Stable Orbit</h3>
+                <p>The observatory operates from a stable Lagrange point, ensuring an uninterrupted view of the universe while maintaining constant communication with Earth.</p>
+
+                <h2>Major Discoveries</h2>
+                <ul>
+                    <li><strong>First Glimpses of Cosmic Dawn:</strong> Observing light from the universe's earliest galaxies, just a few hundred million years after the Big Bang.</li>
+                    <li><strong>Exoplanet Atmosphere Analysis:</strong> Detecting biosignatures in the atmospheres of Earth-like exoplanets, providing tantalizing hints of life beyond Earth.</li>
+                    <li><strong>Mapping Dark Matter:</strong> Creating high-resolution maps of dark matter by observing gravitational lensing effects.</li>
+                    <li><strong>Black Hole Imaging:</strong> Capturing detailed images of supermassive black holes, offering insights into their formation and behavior.</li>
+                </ul>
+
+                <h2>Collaboration and Mission Operations</h2>
+                <p>The Hoffman Observatory is the product of a global partnership between leading space agencies, including NASA, ESA, and other international organizations. Mission operations are coordinated from a central ground station, with astronomers worldwide submitting proposals for observation time.</p>
+
+                <h2>Data Sharing</h2>
+                <p>In a commitment to open science, all data from the Hoffman Observatory is made publicly available after an initial embargo period. This fosters global collaboration and accelerates the pace of discovery.</p>
+
+                <h2>Future Potential</h2>
+                <p>As technology evolves, the Hoffman Observatory is designed with modular components that allow for mid-mission upgrades, ensuring its relevance for decades. Future enhancements may include:</p>
+                <ul>
+                    <li>Higher-resolution detectors.</li>
+                    <li>Expanded wavelength coverage.</li>
+                    <li>AI-driven predictive observation systems.</li>
+                </ul>
+                <p>The observatory’s findings will undoubtedly guide future missions, inspire new technologies, and deepen our understanding of the universe.</p>
+
+                <h2>Why the Hoffman Observatory Matters</h2>
+                <p>The Hoffman Observatory is not just a scientific tool; it’s a symbol of human ingenuity and curiosity. By pushing the boundaries of what we can observe and understand, it brings us closer to answering fundamental questions about our place in the cosmos.</p>
+                <p>As it peers into the depths of space, the Hoffman Observatory reminds us of the infinite possibilities that lie ahead, inspiring future generations to reach for the stars.</p>
+            </section>
+        </div>
+
+        <aside class="article-sidebar">
+            <div class="article-details">
+                <h3>Article Details</h3>
+                <p>Kirashibu DSOT</p>
+                <p>Nov 25, 2024</p>
+                <p>5 Minute Read</p>
+            </div>
+            <div class="share-icons">
+                <h3>Share This Article</h3>
+                <a href="#"><i class="fab fa-facebook-f"></i> Facebook</a>
+                <a href="#"><i class="fab fa-twitter"></i> Twitter</a>
+                <a href="#"><i class="fab fa-linkedin-in"></i> LinkedIn</a>
+            </div>
+        </aside>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-signup">
+            <div class="signup-header">
+                <h3>GET KIRASHIBU UPDATES IN YOUR EMAIL</h3>
+                <p>Sign up and never miss out on what we're up to.</p>
+            </div>
+            <form class="footer-form">
+                <input type="email" placeholder="EMAIL ADDRESS" required>
+                <div class="footer-name-fields">
+                    <input type="text" placeholder="FIRST NAME" required>
+                    <input type="text" placeholder="LAST NAME" required>
+                </div>
+                <button type="submit" class="footer-button">SIGN UP</button>
+            </form>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column footer-logo">
+                <img src="global.png" alt="Kirashibu Logo">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Kirashibu Centers</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">Career Finder</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAPABILITIES</h4>
+                <ul>
+                    <li><a href="#">Cybersecurity Operations</a></li>
+                    <li><a href="#">Humanitarian Operations</a></li>
+                    <li><a href="#">Facilitating Launches</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">What to Expect</a></li>
+                    <li><a href="#">For Families</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KIRASHIBU CORPORATION | PRIVACY POLICY | ACCESSIBILITY | SITEMAP | COOKIE SETTINGS</p>
+        </div>
+    </footer>
+
+   <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const exploreButton = document.getElementById('exploreButton');
+            const exploreDropdown = document.getElementById('exploreDropdown');
+
+            // Toggle the dropdown menu
+            exploreButton.addEventListener('click', function () {
+                exploreDropdown.style.display = exploreDropdown.style.display === 'none' || exploreDropdown.style.display === '' 
+                    ? 'flex' 
+                    : 'none';
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!exploreButton.contains(event.target) && !exploreDropdown.contains(event.target)) {
+                    exploreDropdown.style.display = 'none';
+                }
+            });
+
+            // Dropdown content handler (dynamic content rendering for future sections)
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
+            const dropdownContent = document.getElementById('dropdownContent');
+
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const section = e.target.dataset.section;
+
+                    dropdownContent.innerHTML = ''; // Clear previous content
+
+                    if (section === 'home') {
+                        dropdownContent.innerHTML = `
+                            <div class="dropdown-card">
+                                <a href="hoffman.html">
+                                    <img src="observe.jpeg" alt="Observatory" class="dropdown-card-img">
+                                </a>
+                                <p>Discover Our Hoffman Observatory</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="solai.png" alt="AI" class="dropdown-card-img">
+                                </a>
+                                <p>Explore How We Use AI</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="satellite.jpeg" alt="Satellite" class="dropdown-card-img">
+                                </a>
+                                <p>Explore Our Deep Space Radar Systems</p>
+                            </div>
+                        `;
+                    }
+                    // Additional conditions for other sections can be added here
+                });
+            });
+        });
+    </script>
+</body>
+</html>

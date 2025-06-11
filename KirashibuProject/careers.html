@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at Kirashibu</title>
+    <link rel="stylesheet" href="careers.css">
+	<style>
+        /* Style for the dropdown cards */
+        .dropdown-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ff4c4c; /* Optional border for cards */
+        }
+
+        /* Image fills the card while remaining centered */
+        .dropdown-card img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        /* Text styling */
+        .dropdown-card p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+   <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div id="exploreButton" class="navbar-item">Explore ▼</div>
+                <div class="navbar-search">
+                    <input type="text" class="navbar-search-input" placeholder="Search...">
+                    <button class="navbar-search-button">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="homepage.html" class="navbar-logo">KIRASHIBU</a>
+            </div>
+			<div class="navbar-left">
+				<a href="newsevents.html" id="newsEventsButton" class="navbar-item">News & Events</a>
+				<a href="careers.html" id="careersButton" class="navbar-item">Careers</a>
+			</div>
+        </div>
+        <!-- Explore Dropdown -->
+        <div id="exploreDropdown" class="dropdown-expand" style="display: none;">
+            <div class="dropdown-left">
+                <ul class="dropdown-list">
+                    <li><a href="#" data-section="home" class="dropdown-link">Home</a></li>
+                    <li><a href="#" data-section="missions" class="dropdown-link">Missions</a></li>
+                    <li><a href="#" data-section="humans-in-space" class="dropdown-link">Artificial Intelligence</a></li>
+                    <li><a href="#" data-section="earth-climate" class="dropdown-link">Earth & Climate</a></li>
+                    <li><a href="#" data-section="solar-system" class="dropdown-link">The Solar System & Beyond</a></li>
+                    <li><a href="#" data-section="universe" class="dropdown-link">The Cloud</a></li>
+                    <li><a href="#" data-section="science" class="dropdown-link">Science</a></li>
+                    <li><a href="#" data-section="aeronautics" class="dropdown-link">Aeronautics</a></li>
+                    <li><a href="#" data-section="technology" class="dropdown-link">Technology</a></li>
+                    <li><a href="#" data-section="learning-resources" class="dropdown-link">Learning Resources</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-right explore-dropdown-cards" id="dropdownContent">
+				<!-- Default Home Content -->
+				<div class="dropdown-card">
+					<a href="hoffman.html">
+						<img src="observe.jpeg" alt="Observatory">
+					</a>
+					<p>Discover Our Hoffman Observatory</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="solai.png" alt="AI">
+					</a>
+					<p>Explore How We Use AI</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="satellite.jpeg" alt="Satellite">
+					</a>
+					<p>Explore Our Radar Systems</p>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <section id="hero" class="hero">
+        <div class="container">
+            <h2>Shape the Future with Kirashibu</h2>
+            <p>Join our mission to innovate in IT, AI, Cybersecurity, and Space.</p>
+        </div>
+    </section>
+
+
+
+
+	<!-- Row Section for IT Operations, etc. -->
+	<section class="card-row-section">
+		<div class="card">
+			<h3>IT Operations</h3>
+			<p>Manage and optimize cutting-edge IT infrastructures to ensure smooth operations.</p>
+			<a href="#it-operations" class="btn">Learn More</a>
+		</div>
+		<div class="card">
+			<h3>Research & Development</h3>
+			<p>Push the boundaries of technology by working on development projects.</p>
+			<a href="#research-development" class="btn">Learn More</a>
+		</div>
+		<div class="card">
+			<h3>Space Operations</h3>
+			<p>Contribute to groundbreaking space technology and exploration projects.</p>
+			<a href="#space-operations" class="btn">Learn More</a>
+		</div>
+		<div class="card">
+			<h3>Corporate</h3>
+			<p>Drive strategy, finance, and culture at Kirashibu.</p>
+			<a href="#corporate" class="btn">Learn More</a>
+		</div>
+	</section>
+	<section>
+
+	
+
+	<!-- Column Section for Why Join Us, About Us -->
+	<section class="card-column-section">
+		<div class="card no-hover">
+			<h3>Student Opportunities</h3>
+			<p>Kickstart your career with internships and co-op programs at Kirashibu. Gain hands-on experience in the tech industry.</p>
+			<a href="#student-opportunities" class="btn">Learn More</a>
+		</div>
+		<div class="card hover">
+				<h3>Why Join Us at Kirashibu?</h3>
+				<p>At Kirashibu, we're on a mission to push boundaries—both in space and in technology. We're a unique fusion of innovation, where the vast frontiers of the space industry meet the transformative power of IT. Join us to shape the future, whether it’s beyond our atmosphere or within the core of digital advancements on Earth.</p>
+				<ul>
+					<li><strong>Innovation at Scale:</strong> Work on projects that aren't just challenging—they're changing the world. From designing groundbreaking satellite systems to advancing secure, high-performance IT infrastructure, every day at Kirashibu is a step towards revolution.</li>
+					<li><strong>Growth-Oriented Culture:</strong> We believe that growth isn’t just for rockets. At Kirashibu, you'll find an environment that values your personal and professional development. Whether you're learning new technologies or solving the latest puzzles in space exploration, we offer opportunities to elevate your skills. With mentorship programs, workshops, and hands-on projects, we provide the tools you need to thrive and grow.</li>
+					<li><strong>Impact-Driven Teams:</strong> At our core, we're explorers. We seek bold thinkers who are excited to drive impact—people who aren’t afraid of the unknown, but instead see it as an opportunity. Collaborate with some of the brightest minds in the industry, and together, let’s go beyond the horizon. Your contributions will directly shape our missions, from pioneering new satellite capabilities to developing IT systems that support humanity’s next giant leap.</li>
+					<li><strong>Diversity of Expertise:</strong> Kirashibu is at the intersection of two dynamic worlds: space and IT. Here, engineers, technologists, and visionaries work side by side, each bringing diverse expertise to tackle challenges that span from the infinite cosmos to deep data systems. Your voice and talents will add to this powerful blend of knowledge. We embrace diversity not just in skills but also in perspectives, believing that the best solutions come from the widest range of ideas.</li>
+					<li><strong>Cutting-Edge Technology:</strong> At Kirashibu, you'll work with the latest tools and technologies in both the space and IT domains. From AI-powered data analytics to autonomous satellite navigation systems, we are committed to staying at the forefront of innovation. Be part of a team that is constantly experimenting, prototyping, and building the next wave of technological advances.</li>
+					<li><strong>A Mission with Purpose:</strong> We aren’t just another company—we’re a team with a purpose. Our projects contribute to humanity's progress, from expanding our understanding of the universe to improving communications here on Earth. If you're driven by a passion to make a difference, Kirashibu offers you the chance to leave your mark on some of the most meaningful challenges of our time.</li>
+				</ul>
+				<p>Join us at Kirashibu and be part of a journey that’s pushing the limits of what’s possible—both here on Earth and out among the stars.</p>
+			</div>
+		<div class="card no-hover">
+			<h3>About Us</h3>
+			<p>Kirashibu is at the forefront of technology, pioneering solutions in artificial intelligence, cybersecurity, and space exploration. Our team thrives on creativity, collaboration, and innovation.</p>
+		</div>
+	</section>
+
+
+    <section id="apply" class="apply">
+        <div class="container">
+            <h2>Ready to Join?</h2>
+            <p>We'd love to hear from you! Submit your application and join the team shaping the future.</p>
+            <a href="mailto:careers@kirashibu.com" class="btn">Apply via Email</a>
+        </div>
+    </section>
+
+  <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-signup">
+            <div class="signup-header">
+                <h3>GET KIRASHIBU UPDATES IN YOUR EMAIL</h3>
+                <p>Sign up and never miss out on what we're up to.</p>
+            </div>
+            <form class="footer-form">
+                <input type="email" placeholder="EMAIL ADDRESS" required>
+                <div class="footer-name-fields">
+                    <input type="text" placeholder="FIRST NAME" required>
+                    <input type="text" placeholder="LAST NAME" required>
+                </div>
+                <button type="submit" class="footer-button">SIGN UP</button>
+            </form>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column footer-logo">
+                <img src="global.png" alt="Kirashibu Logo">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Kirashibu Centers</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">Career Finder</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAPABILITIES</h4>
+                <ul>
+                    <li><a href="#">Cybersecurity Operations</a></li>
+                    <li><a href="#">Humanitarian Operations</a></li>
+                    <li><a href="#">Facilitating Launches</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">What to Expect</a></li>
+                    <li><a href="#">For Families</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KIRASHIBU CORPORATION | PRIVACY POLICY | ACCESSIBILITY | SITEMAP | COOKIE SETTINGS</p>
+        </div>
+    </footer>
+
+   <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const exploreButton = document.getElementById('exploreButton');
+            const exploreDropdown = document.getElementById('exploreDropdown');
+
+            // Toggle the dropdown menu
+            exploreButton.addEventListener('click', function () {
+                exploreDropdown.style.display = exploreDropdown.style.display === 'none' || exploreDropdown.style.display === '' 
+                    ? 'flex' 
+                    : 'none';
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!exploreButton.contains(event.target) && !exploreDropdown.contains(event.target)) {
+                    exploreDropdown.style.display = 'none';
+                }
+            });
+
+            // Dropdown content handler (dynamic content rendering for future sections)
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
+            const dropdownContent = document.getElementById('dropdownContent');
+
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const section = e.target.dataset.section;
+
+                    dropdownContent.innerHTML = ''; // Clear previous content
+
+                    if (section === 'home') {
+                        dropdownContent.innerHTML = `
+                            <div class="dropdown-card">
+                                <a href="hoffman.html">
+                                    <img src="observe.jpeg" alt="Observatory" class="dropdown-card-img">
+                                </a>
+                                <p>Discover Our Hoffman Observatory</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="solai.png" alt="AI" class="dropdown-card-img">
+                                </a>
+                                <p>Explore How We Use AI</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="satellite.jpeg" alt="Satellite" class="dropdown-card-img">
+                                </a>
+                                <p>Explore Our Deep Space Radar Systems</p>
+                            </div>
+                        `;
+                    }
+                    // Additional conditions for other sections can be added here
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Article Page</title>
+    <link rel="stylesheet" href="articlestyle.css">
+	<style>
+        /* Style for the dropdown cards */
+        .dropdown-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ff4c4c; /* Optional border for cards */
+        }
+
+        /* Image fills the card while remaining centered */
+        .dropdown-card img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        /* Text styling */
+        .dropdown-card p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div id="exploreButton" class="navbar-item">Explore ▼</div>
+                <div class="navbar-search">
+                    <input type="text" class="navbar-search-input" placeholder="Search...">
+                    <button class="navbar-search-button">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="homepage.html" class="navbar-logo">KIRASHIBU</a>
+            </div>
+			<div class="navbar-left">
+				<a href="newsevents.html" id="newsEventsButton" class="navbar-item">News & Events</a>
+				<a href="careers.html" id="careersButton" class="navbar-item">Careers</a>
+			</div>
+        </div>
+        <!-- Explore Dropdown -->
+        <div id="exploreDropdown" class="dropdown-expand" style="display: none;">
+            <div class="dropdown-left">
+                <ul class="dropdown-list">
+                    <li><a href="#" data-section="home" class="dropdown-link">Home</a></li>
+                    <li><a href="#" data-section="missions" class="dropdown-link">Missions</a></li>
+                    <li><a href="#" data-section="humans-in-space" class="dropdown-link">Artificial Intelligence</a></li>
+                    <li><a href="#" data-section="earth-climate" class="dropdown-link">Earth & Climate</a></li>
+                    <li><a href="#" data-section="solar-system" class="dropdown-link">The Solar System</a></li>
+                    <li><a href="#" data-section="universe" class="dropdown-link">The Universe</a></li>
+                    <li><a href="#" data-section="science" class="dropdown-link">Science</a></li>
+                    <li><a href="#" data-section="aeronautics" class="dropdown-link">Aeronautics</a></li>
+                    <li><a href="#" data-section="technology" class="dropdown-link">Technology</a></li>
+                    <li><a href="#" data-section="learning-resources" class="dropdown-link">Learning Resources</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-right explore-dropdown-cards" id="dropdownContent">
+				<!-- Default Home Content -->
+				<div class="dropdown-card">
+					<a href="hoffman.html">
+						<img src="observe.jpeg" alt="Observatory">
+					</a>
+					<p>Discover Our Hoffman Observatory</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="solai.png" alt="AI">
+					</a>
+					<p>Explore How We Use AI</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="satellite.jpeg" alt="Satellite">
+					</a>
+					<p>Explore Our Radar Systems</p>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <!-- Article Section -->
+    <main class="article-container">
+        <aside class="article-sidebar">
+            <div class="article-details">
+                <h3>Tara Friesen</h3>
+                <p>NOV 18, 2024</p>
+                <p>ARTICLE</p>
+                <div class="share-icons">
+                    <a href="#"><i class="fab fa-xing"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-rss"></i></a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="article-main-content">
+            <div class="read-time">2 MIN READ</div>
+            <header class="article-header">
+                <h1 class="article-title">Meet IMA: The Intelligent Medical Assistant Transforming Healthcare</h1>
+            </header>
+            <div class="article-image">
+                <img src="IMAShowcase.jpeg" alt="Healthcare Revolution">
+                <p class="article-image-subtext">Doctors and developers join together to create a seamless and interactive app experience for healthcare professionals.</p>
+            </div>
+            <section class="article-content">
+                <h2>What is IMA?</h2>
+                <p>Intelligent Medical Assistant (IMA) is the latest breakthrough in healthcare technology, designed to empower doctors, nurses, and medical staff. Powered by <strong>Sol</strong>, a state-of-the-art cloud and AI platform, IMA redefines how healthcare professionals work, enabling them to focus on what matters most: their patients.</p>
+
+                <h2>What Makes IMA Special?</h2>
+                <p>IMA isn’t just smart—it’s revolutionary. Imagine a tireless assistant who organizes your day, handles repetitive tasks, and equips you with real-time insights, all while seamlessly fitting into your workflow. That’s IMA. By harnessing the power of Sol’s robust AI and cloud capabilities, IMA takes the pressure off healthcare workers, delivering unmatched precision, efficiency, and reliability.</p>
+
+                <h2>Key Features at a Glance</h2>
+                <ol>
+                    <li><strong>AI-Powered Task Management</strong><br>IMA intelligently organizes tasks, schedules, and reminders, keeping teams on track. Whether it’s flagging an urgent case or ensuring medications are administered on time, IMA is always a step ahead.</li>
+                    <li><strong>Smart Clinical Insights</strong><br>IMA analyzes patient data against vast medical knowledge bases, providing instant, evidence-backed recommendations to guide clinical decisions.</li>
+                    <li><strong>Effortless Documentation</strong><br>No more late-night charting sessions. IMA’s advanced natural language processing (NLP) transcribes conversations, updates electronic health records (EHRs), and ensures compliance—letting you focus on patient care.</li>
+                    <li><strong>Real-Time Monitoring</strong><br>Integrated with IoT devices and wearables, IMA keeps an eye on patient vitals around the clock. Sudden drops in oxygen levels? IMA alerts you immediately, helping prevent emergencies before they escalate.</li>
+                    <li><strong>Seamless Communication</strong><br>IMA bridges communication gaps by coordinating updates and messages across teams. Lab results, imaging reports, or patient updates? Delivered instantly to the right hands.</li>
+                    <li><strong>On-Demand Knowledge</strong><br>IMA delivers curated medical updates, keeping you informed without the hassle of digging through journals.</li>
+                </ol>
+
+                <h2>Why Sol Powers the Future of Healthcare</h2>
+                <p>IMA’s foundation, Sol, is the backbone of its intelligence. This platform ensures that IMA isn’t just functional but extraordinary.</p>
+                <ul>
+                    <li><strong>Cloud-Driven Scalability:</strong> From small practices to sprawling hospital networks, Sol scales effortlessly.</li>
+                    <li><strong>Real-Time AI Analytics:</strong> Instant processing of data for accurate, actionable insights.</li>
+                    <li><strong>Ironclad Security:</strong> Patient data stays protected with compliance to stringent standards like HIPAA and GDPR.</li>
+                    <li><strong>Custom Integrations:</strong> Sol ensures IMA fits seamlessly with existing healthcare systems, no disruptions required.</li>
+                </ul>
+
+                <h2>Why Healthcare Workers Love IMA</h2>
+                <blockquote>
+                    "IMA is like having a supercharged assistant who never sleeps."
+                </blockquote>
+                <p>Doctors and nurses report feeling less overwhelmed and more effective in their roles. Tasks that used to take hours—charting, coordinating care, reviewing data—are now handled in minutes. With IMA, healthcare professionals can focus on delivering compassionate, human-centered care.</p>
+
+                <h2>The Impact: A Glimpse into the Future</h2>
+                <p>IMA represents the next step in intelligent healthcare solutions. Imagine a world where:</p>
+                <ul>
+                    <li>Burnout is a thing of the past.</li>
+                    <li>Diagnoses are faster and more accurate.</li>
+                    <li>Every patient receives the attention they deserve.</li>
+                </ul>
+                <p>With IMA and Sol, that future is already here. By combining cutting-edge AI with the needs of medical professionals, this duo is transforming healthcare into a streamlined, patient-first experience.</p>
+
+                <h2>Experience IMA in Action</h2>
+                <p>Curious to see how IMA can transform your healthcare practice? Watch it tackle a hectic hospital day:</p>
+                <ul>
+                    <li><strong>Morning:</strong> Automatically prioritizes patient cases and preps the care team with summaries.</li>
+                    <li><strong>Afternoon:</strong> Analyzes imaging results, flags anomalies, and updates EHRs with lightning speed.</li>
+                    <li><strong>Evening:</strong> Monitors patient vitals, alerts the night shift to potential issues, and delivers a seamless shift handover.</li>
+                </ul>
+                <p>IMA, powered by Sol, is not just a tool—it’s your partner in delivering smarter, better, and faster healthcare. Ready to meet your new assistant?</p>
+            </section>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-signup">
+            <div class="signup-header">
+                <h3>GET KIRASHIBU UPDATES IN YOUR EMAIL</h3>
+                <p>Sign up and never miss out on what we're up to.</p>
+            </div>
+            <form class="footer-form">
+                <input type="email" placeholder="EMAIL ADDRESS" required>
+                <div class="footer-name-fields">
+                    <input type="text" placeholder="FIRST NAME" required>
+                    <input type="text" placeholder="LAST NAME" required>
+                </div>
+                <button type="submit" class="footer-button">SIGN UP</button>
+            </form>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column footer-logo">
+                <img src="global.png" alt="Kirashibu Logo">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Kirashibu Centers</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">Career Finder</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAPABILITIES</h4>
+                <ul>
+                    <li><a href="#">Cybersecurity Operations</a></li>
+                    <li><a href="#">Humanitarian Operations</a></li>
+                    <li><a href="#">Facilitating Launches</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">What to Expect</a></li>
+                    <li><a href="#">For Families</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KIRASHIBU CORPORATION | PRIVACY POLICY | ACCESSIBILITY | SITEMAP | COOKIE SETTINGS</p>
+        </div>
+    </footer>
+
+  <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const exploreButton = document.getElementById('exploreButton');
+            const exploreDropdown = document.getElementById('exploreDropdown');
+
+            // Toggle the dropdown menu
+            exploreButton.addEventListener('click', function () {
+                exploreDropdown.style.display = exploreDropdown.style.display === 'none' || exploreDropdown.style.display === '' 
+                    ? 'flex' 
+                    : 'none';
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!exploreButton.contains(event.target) && !exploreDropdown.contains(event.target)) {
+                    exploreDropdown.style.display = 'none';
+                }
+            });
+
+            // Dropdown content handler (dynamic content rendering for future sections)
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
+            const dropdownContent = document.getElementById('dropdownContent');
+
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const section = e.target.dataset.section;
+
+                    dropdownContent.innerHTML = ''; // Clear previous content
+
+                    if (section === 'home') {
+                        dropdownContent.innerHTML = `
+                            <div class="dropdown-card">
+                                <a href="hoffman.html">
+                                    <img src="observe.jpeg" alt="Observatory" class="dropdown-card-img">
+                                </a>
+                                <p>Discover Our Hoffman Observatory</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="solai.png" alt="AI" class="dropdown-card-img">
+                                </a>
+                                <p>Explore How We Use AI</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="satellite.jpeg" alt="Satellite" class="dropdown-card-img">
+                                </a>
+                                <p>Explore Our Deep Space Radar Systems</p>
+                            </div>
+                        `;
+                    }
+                    // Additional conditions for other sections can be added here
+                });
+            });
+        });
+    </script>
+</body>
+</html>

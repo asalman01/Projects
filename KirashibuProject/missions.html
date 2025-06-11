@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="missions.css">
+	<style>
+        /* Style for the dropdown cards */
+        .dropdown-card {
+            position: relative;
+            width: 300px;
+            height: 200px;
+            overflow: hidden;
+            margin: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            text-align: center;
+            border: 1px solid #ff4c4c; /* Optional border for cards */
+        }
+
+        /* Image fills the card while remaining centered */
+        .dropdown-card img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transform: translate(-50%, -50%);
+            z-index: 1;
+        }
+
+        /* Text styling */
+        .dropdown-card p {
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            padding: 10px;
+            background-color: transparent;
+            color: white;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-left">
+                <div id="exploreButton" class="navbar-item">Explore ▼</div>
+                <div class="navbar-search">
+                    <input type="text" class="navbar-search-input" placeholder="Search...">
+                    <button class="navbar-search-button">
+                        <span>🔍</span>
+                    </button>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <a href="homepage.html" class="navbar-logo">KIRASHIBU</a>
+            </div>
+			<div class="navbar-left">
+				<a href="newsevents.html" id="newsEventsButton" class="navbar-item">News & Events</a>
+				<a href="careers.html" id="careersButton" class="navbar-item">Careers</a>
+			</div>
+        </div>
+        <!-- Explore Dropdown -->
+        <div id="exploreDropdown" class="dropdown-expand" style="display: none;">
+            <div class="dropdown-left">
+                <ul class="dropdown-list">
+                    <li><a href="#" data-section="home" class="dropdown-link">Home</a></li>
+                    <li><a href="#" data-section="missions" class="dropdown-link">Missions</a></li>
+                    <li><a href="#" data-section="humans-in-space" class="dropdown-link">Artificial Intelligence</a></li>
+                    <li><a href="#" data-section="earth-climate" class="dropdown-link">Earth & Climate</a></li>
+                    <li><a href="#" data-section="solar-system" class="dropdown-link">The Solar System & Beyond</a></li>
+                    <li><a href="#" data-section="universe" class="dropdown-link">The Cloud</a></li>
+                    <li><a href="#" data-section="science" class="dropdown-link">Science</a></li>
+                    <li><a href="#" data-section="aeronautics" class="dropdown-link">Aeronautics</a></li>
+                    <li><a href="#" data-section="technology" class="dropdown-link">Technology</a></li>
+                    <li><a href="#" data-section="learning-resources" class="dropdown-link">Learning Resources</a></li>
+                </ul>
+            </div>
+            <div class="dropdown-right explore-dropdown-cards" id="dropdownContent">
+				<!-- Default Home Content -->
+				<div class="dropdown-card">
+					<a href="hoffman.html">
+						<img src="observe.jpeg" alt="Observatory">
+					</a>
+					<p>Discover Our Hoffman Observatory</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="solai.png" alt="AI">
+					</a>
+					<p>Explore How We Use AI</p>
+				</div>
+				<div class="dropdown-card">
+					<a href="#">
+						<img src="satellite.jpeg" alt="Satellite">
+					</a>
+					<p>Explore Our Radar Systems</p>
+				</div>
+			</div>
+        </div>
+    </div>
+
+    <!-- Gallery Section -->
+    <div class="gallery-section">
+        <h2 class="gallery-title">Upcoming Launches & Missions</h2>
+        <div class="gallery-container">
+            <div class="gallery-card">
+                <img src="spacetelescope.jpeg" alt="Project 1" class="gallery-card-img">
+                <div class="gallery-card-content">
+                    <h3 class="gallery-card-title">Horizon-5 Orbital Telescope Deployment</h3>
+                    <p class="gallery-card-description">Discover how Kirashibu Space Deployment Team prepares for Horizon-5.</p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="rocketlaunch.jpeg" alt="Project 2" class="gallery-card-img">
+                <div class="gallery-card-content">
+                    <h3 class="gallery-card-title">Pioneer One Lunar Logistics Mission</h3>
+                    <p class="gallery-card-description">Learn more about the details and workings behind the Lunar Accessibility Initative. </p>
+                </div>
+            </div>
+            <div class="gallery-card">
+                <img src="rover.jpeg" alt="Project 3" class="gallery-card-img">
+                <div class="gallery-card-content">
+                    <h3 class="gallery-card-title">Prometheus-1 Martian Forward Mission</h3>
+                    <p class="gallery-card-description">Learn more about how we are testing and preparing for Prometheus-1.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+	 <!-- Article Section -->
+    <div class="article-section">
+        <h2 class="article-title">Why Kirashibu is Committed to Space Operations</h2>
+        <div class="article-content">
+            <h3>Kirashibu's Vision and Foundational Principles</h3>
+            <p>Kirashibu's commitment to space operations is rooted in a vision to address humanity's most pressing challenges and unlock the potential of the cosmos for the benefit of all. The company’s philosophy is guided by three foundational principles: sustainability, innovation, and exploration. These principles drive Kirashibu’s endeavors in the space sector, aiming to create a future where humanity thrives beyond Earth while enhancing life on our home planet.</p>
+
+            <h3>Core Reasons for Commitment</h3>
+            <h4>1. Ensuring Humanity’s Long-Term Survival</h4>
+            <p><strong>Planetary Challenges:</strong> With growing concerns about climate change, resource depletion, and overpopulation, Earth’s ability to sustain human civilization is under strain. Kirashibu views space as a necessary frontier for ensuring humanity’s survival.</p>
+            <p><strong>Space as a Backup Plan:</strong> Establishing sustainable human habitats on the Moon, Mars, and beyond will serve as a safeguard against potential global catastrophes, whether natural or man-made.</p>
+
+            <h4>2. Advancing Scientific Knowledge</h4>
+            <p><strong>Cosmic Understanding:</strong> Exploring the universe allows scientists to unravel the mysteries of our existence, from the origins of the cosmos to the potential for life elsewhere. Missions like the Horizon-5 Orbital Telescope reflect this commitment to advancing humanity’s understanding of space.</p>
+            <p><strong>Technological Innovations:</strong> Space operations act as a catalyst for technological breakthroughs in robotics, AI, materials science, and medicine, many of which have applications that benefit society on Earth.</p>
+
+            <h4>3. Expanding Economic Opportunities</h4>
+            <p><strong>Resource Utilization:</strong> Kirashibu sees space as a treasure trove of untapped resources. Asteroids, for example, hold vast quantities of rare minerals, while lunar and Martian regolith could provide materials for construction and fuel.</p>
+            <p><strong>Orbital Economy:</strong> By pioneering in-orbit manufacturing and deploying communication satellites, Kirashibu aims to establish a thriving orbital economy that supports industries ranging from telecommunications to pharmaceuticals.</p>
+
+            <h4>4. Promoting Global Collaboration</h4>
+            <p><strong>Unifying Vision:</strong> Space exploration transcends national boundaries and fosters international collaboration. Kirashibu actively partners with global organizations to develop technologies and share the rewards of exploration.</p>
+            <p><strong>Equitable Access:</strong> The company is dedicated to ensuring that the benefits of space are accessible to all, not limited to a select few nations or corporations.</p>
+
+            <h4>5. Inspiring Future Generations</h4>
+            <p><strong>Educational Impact:</strong> By achieving bold space milestones, Kirashibu inspires the next generation of engineers, scientists, and dreamers. Its programs encourage STEM education and innovation, sparking global interest in space exploration.</p>
+            <p><strong>Cultural Legacy:</strong> Humanity’s ventures into space are seen as a testament to human ingenuity, leaving a lasting legacy of exploration and curiosity.</p>
+
+            <h3>Long-Term Vision</h3>
+            <h4>1. Establishing a Permanent Presence in Space</h4>
+            <p><strong>Orbital Habitats:</strong> Kirashibu aims to construct modular, self-sustaining space stations like the Aurora Habitat Ring, designed to house researchers and future settlers.</p>
+            <p><strong>Lunar and Martian Bases:</strong> Projects like the Luna Base Phoenix are stepping stones toward permanent human settlements on the Moon and Mars, ensuring humanity’s ability to live and thrive off-planet.</p>
+
+            <h4>2. Revolutionizing Space Travel</h4>
+            <p><strong>Advanced Propulsion Systems:</strong> The development of the Asahi Engine will enable faster, more efficient travel to distant planets and moons, drastically reducing interplanetary journey times.</p>
+            <p><strong>Reusable Spacecraft:</strong> Kirashibu’s focus on reusable launch systems will make space travel more affordable and sustainable, opening it to commercial ventures and private individuals.</p>
+
+            <h4>3. Harnessing Space Resources</h4>
+            <p><strong>Asteroid Mining:</strong> The company envisions a future where asteroid mining provides abundant resources, reducing the strain on Earth’s environment.</p>
+            <p><strong>Solar Power Satellites:</strong> Kirashibu is exploring large-scale orbital solar arrays to beam energy back to Earth, creating a clean, renewable energy source.</p>
+
+            <h4>4. Building a Space-Based Economy</h4>
+            <p><strong>In-Orbit Manufacturing:</strong> Platforms like Stellar Forge will pioneer zero-gravity production of advanced materials and pharmaceuticals, enabling breakthroughs that are impossible on Earth.</p>
+            <p><strong>Tourism and Entertainment:</strong> Kirashibu sees the burgeoning space tourism industry as a gateway to making space more accessible and fostering public interest.</p>
+
+            <h4>5. Pioneering Interstellar Exploration</h4>
+            <p><strong>Deep-Space Missions:</strong> In the next 50 years, Kirashibu aims to launch its first interstellar probes to explore neighboring star systems and search for exoplanets with conditions suitable for life.</p>
+            <p><strong>Interstellar Travel:</strong> The company’s ultimate goal is to develop technologies that enable humanity to become a multi-stellar species, setting the stage for exploration beyond our solar system.</p>
+
+            <h3>A Vision for the Stars</h3>
+            <p>Kirashibu’s long-term vision is ambitious yet grounded in the belief that space is humanity’s shared destiny. The company sees itself not just as a leader in technology, but as a steward of a brighter future—one where Earth’s challenges are mitigated through the resources, knowledge, and opportunities found in the stars.</p>
+            <p>By blending innovation with responsibility, Kirashibu is determined to make space exploration a unifying force for humanity, ensuring our survival and prosperity in the cosmic age.</p>
+        </div>
+    </div>
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-signup">
+            <div class="signup-header">
+                <h3>GET KIRASHIBU UPDATES IN YOUR EMAIL</h3>
+                <p>Sign up and never miss out on what we're up to.</p>
+            </div>
+            <form class="footer-form">
+                <input type="email" placeholder="EMAIL ADDRESS" required>
+                <div class="footer-name-fields">
+                    <input type="text" placeholder="FIRST NAME" required>
+                    <input type="text" placeholder="LAST NAME" required>
+                </div>
+                <button type="submit" class="footer-button">SIGN UP</button>
+            </form>
+        </div>
+
+        <div class="footer-content">
+            <div class="footer-column footer-logo">
+                <img src="global.png" alt="Kirashibu Logo">
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>ABOUT</h4>
+                <ul>
+                    <li><a href="#">Mission</a></li>
+                    <li><a href="#">Kirashibu Centers</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">News & Events</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">Career Finder</a></li>
+                    <li><a href="#">Benefits</a></li>
+                    <li><a href="#">Education</a></li>
+                    <li><a href="#">Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAPABILITIES</h4>
+                <ul>
+                    <li><a href="#">Cybersecurity Operations</a></li>
+                    <li><a href="#">Humanitarian Operations</a></li>
+                    <li><a href="#">Facilitating Launches</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>CAREERS</h4>
+                <ul>
+                    <li><a href="#">What to Expect</a></li>
+                    <li><a href="#">For Families</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 KIRASHIBU CORPORATION | PRIVACY POLICY | ACCESSIBILITY | SITEMAP | COOKIE SETTINGS</p>
+        </div>
+    </footer>
+
+  <!-- JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const exploreButton = document.getElementById('exploreButton');
+            const exploreDropdown = document.getElementById('exploreDropdown');
+
+            // Toggle the dropdown menu
+            exploreButton.addEventListener('click', function () {
+                exploreDropdown.style.display = exploreDropdown.style.display === 'none' || exploreDropdown.style.display === '' 
+                    ? 'flex' 
+                    : 'none';
+            });
+
+            // Close the dropdown if clicked outside
+            document.addEventListener('click', function (event) {
+                if (!exploreButton.contains(event.target) && !exploreDropdown.contains(event.target)) {
+                    exploreDropdown.style.display = 'none';
+                }
+            });
+
+            // Dropdown content handler (dynamic content rendering for future sections)
+            const dropdownLinks = document.querySelectorAll('.dropdown-link');
+            const dropdownContent = document.getElementById('dropdownContent');
+
+            dropdownLinks.forEach(link => {
+                link.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const section = e.target.dataset.section;
+
+                    dropdownContent.innerHTML = ''; // Clear previous content
+
+                    if (section === 'home') {
+                        dropdownContent.innerHTML = `
+                            <div class="dropdown-card">
+                                <a href="hoffman.html">
+                                    <img src="observe.jpeg" alt="Observatory" class="dropdown-card-img">
+                                </a>
+                                <p>Discover Our Hoffman Observatory</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="solai.png" alt="AI" class="dropdown-card-img">
+                                </a>
+                                <p>Explore How We Use AI</p>
+                            </div>
+                            <div class="dropdown-card">
+                                <a href="#">
+                                    <img src="satellite.jpeg" alt="Satellite" class="dropdown-card-img">
+                                </a>
+                                <p>Explore Our Deep Space Radar Systems</p>
+                            </div>
+                        `;
+                    }
+                    // Additional conditions for other sections can be added here
+                });
+            });
+        });
+    </script>
+</body>
+</html>

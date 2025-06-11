@@ -1,0 +1,1 @@
+from expressionTreeNode import ConstantNode, OperatorNodec1 = ConstantNode(2.456)c1.display()print()c1.info()print()c2 = ConstantNode(3.89)c2.display()print()c2.info()print()opn1 = OperatorNode('*',c1,c2)opn1.display()print()opn1.info()print()

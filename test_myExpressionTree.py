@@ -1,0 +1,1 @@
+from myExpressionTree import MyExpressionTreeinput1 = "3.2+.4*5.67/6.145="input2 = "(12.6+0.3)*(5.6/2.789)/(34.5-4)="input3 = "11.897/3.4+9.2-0.4*6.9/12.6-16.7="expTree = MyExpressionTree(input1)expTree.printInfo()print()expTree.resetInput(input2)expTree.printInfo()print()expTree.resetInput(input3)expTree.printInfo()print()
